@@ -1,5 +1,5 @@
 # dropbox
-这是一个容器化的dropbox。只需两步即可在linux下运行dropbox。
+这是一个容器化的dropbox客户端。只需两步即可在linux下运行dropbox。
 
 1. 启动容器：
 
