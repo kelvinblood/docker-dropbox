@@ -1,6 +1,6 @@
 FROM python:2-slim-jessie
 
-ADD dropbox.py /
+ADD src/* /
 
 RUN apt-get update \
     && apt-get install -y wget \
@@ -10,4 +10,4 @@ RUN apt-get update \
     && rm dropbox.tgz
 
 WORKDIR /root
-ENTRYPOINT ["/usr/local/bin/python","/dropbox.py"]
+ENTRYPOINT ["/entrypoint.sh"]
