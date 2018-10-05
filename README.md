@@ -11,14 +11,12 @@
 
    ```
    docker run --name=dropbox -d \
-     --entrypoint=/.dropbox-dist/dropboxd \
      -v /root/Dropbox:/root/Dropbox \
      -v /root/.dropbox:/root/.dropbox \
-     -v /root/.dropbox-dist:/root/.dropbox-dist \
-     kelvinblood/dropbox
+     kelvinblood/dropbox:v0.2
    ```
 
-2. 管理账号
+2. 关联账号
 
    ```
    docker logs -f dropbox
@@ -37,6 +35,9 @@
 
    ```
    ./dropbox.sh status
+
+   Syncing (1,795 files remaining, 3 mins left)
+   Downloading 1,795 files (23,216 KB/sec, 3 mins left)
    ```
 
    ​

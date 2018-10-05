@@ -10,4 +10,4 @@ RUN apt-get update \
     && rm dropbox.tgz
 
 WORKDIR /root
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/.dropbox-dist/dropboxd"]
