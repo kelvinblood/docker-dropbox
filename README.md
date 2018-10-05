@@ -4,12 +4,6 @@
 1. 启动容器：
 
    ```
-   ./dropbox.sh
-   ```
-
-   实际上运行下面的命令：
-
-   ```
    docker run --name=dropbox -d \
      -v /root/Dropbox:/root/Dropbox \
      -v /root/.dropbox:/root/.dropbox \
@@ -34,10 +28,5 @@
 3. 查看dropbox运行状况
 
    ```
-   ./dropbox.sh status
-
-   Syncing (1,795 files remaining, 3 mins left)
-   Downloading 1,795 files (23,216 KB/sec, 3 mins left)
+   docker exec dropbox python /dropbox.py status
    ```
-
-   ​

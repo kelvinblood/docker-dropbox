@@ -1,0 +1,20 @@
+/vendor
+/.idea
+Homestead.yaml
+Homestead.json
+.env
+*.iml
+/docs
+public/res/qrs/
+public/res/bonus/
+/tmp
+# dependencies
+node_modules
+*~
+/docker/psql/dump
+/docker/psql/data
+/docker/letsencrypt/data
+/docker/letsencrypt/datalib
+/docker/tmp
+*.log
+*.swp
